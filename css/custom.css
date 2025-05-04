@@ -1,0 +1,55 @@
+/* 导航栏背景 */
+.navbar,
+.navbar.navbar-fixed,
+.navbar.scrolled,
+.navbar.navbar-fixed.scrolled {
+    /* 透明样式 */
+    background: transparent !important;
+    box-shadow: none!important;
+    /* 强制透明 */
+    transition: none!important;
+}
+
+/* 搜索弹窗 */
+.modal-content {
+    /* 半透明 */
+    background: rgba(255,255,255,0) !important;
+    backdrop-filter: blur(8px);
+    box-shadow: none !important;
+}
+
+/* 花间酒字体 */
+@font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/花间酒行书.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 只让导航栏和banner副标题用特殊字体 */
+.navbar,
+.banner-text .h2,
+.banner-text .h2 span,
+.about-info, .about-info * {
+    font-family: 'MyFont', '微软雅黑', 'Microsoft YaHei', Arial, sans-serif !important;
+}
+/* 保证文章内容依然使用主题默认字体 */
+.post {
+    font-family: inherit;
+}
+
+/* 鼠标悬放大效果 */
+/* 图片 */
+.about-avatar img {
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.about-avatar img:hover {
+    transform: scale(1.12);
+}
+/* 文字 */
+.banner-text .h2 span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.banner-text .h2 span:hover {
+    transform: scale(1.15);
+}
