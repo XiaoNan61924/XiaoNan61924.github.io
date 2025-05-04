@@ -46,6 +46,12 @@
 .post {
     font-family: inherit;
 }
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+}
 
 /* 鼠标悬放大效果 */
 /* 图片 */
@@ -63,31 +69,3 @@
 .banner-text .h2 span:hover {
     transform: scale(1.15);
 }
-
-/*  */
-.category-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-  .category-item {
-    display: inline-block;
-    padding: 8px 18px;
-    background: #f5f7fa;
-    border-radius: 20px;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background 0.2s, color 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-  .category-item:hover {
-    background: #30a9de;
-    color: #fff;
-  }
-  .category-count {
-    margin-left: 8px;
-    color: #888;
-    font-size: 14px;
-  }
