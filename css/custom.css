@@ -9,6 +9,16 @@
     /* 强制透明 */
     transition: none!important;
 }
+/* 导航栏隐藏下拉显示 */
+.navbar {
+    transition: transform 0.3s;
+}
+.navbar.navbar-hide {
+    transform: translateY(-100%);
+}
+.navbar.navbar-show {
+    transform: translateY(0);
+}
 
 /* 搜索弹窗 */
 .modal-content {
@@ -53,3 +63,31 @@
 .banner-text .h2 span:hover {
     transform: scale(1.15);
 }
+
+/*  */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .category-item {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #f5f7fa;
+    border-radius: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .category-item:hover {
+    background: #30a9de;
+    color: #fff;
+  }
+  .category-count {
+    margin-left: 8px;
+    color: #888;
+    font-size: 14px;
+  }
