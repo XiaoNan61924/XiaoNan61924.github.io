@@ -71,10 +71,10 @@
 }
 
 /* 强制首页副标题所有链接在各状态下都保持白色 */
-#subtitle a,
+/* #subtitle a,
 #subtitle a:visited,
 #subtitle a:hover,
 #subtitle a:active {
-  color: #ffffff !important;       /* 一律白色 */
-  text-decoration: none !important;/* 去掉下划线 */
-}
+  color: #ffffff !important;
+  text-decoration: none !important;
+} */
