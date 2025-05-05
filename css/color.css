@@ -1,0 +1,7 @@
+.home .banner-text h2 a,
+.home .banner-text h2 a:visited,
+.home .banner-text h2 a:hover,
+.home .banner-text h2 a:active {
+  color: #ffffff !important;
+  text-decoration: none;
+}
