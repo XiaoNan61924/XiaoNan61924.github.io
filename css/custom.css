@@ -75,6 +75,35 @@
 #subtitle a:visited,
 #subtitle a:hover,
 #subtitle a:active {
-  color: #ffffff !important;
-  text-decoration: none !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* 隐藏及下拉过渡动画 */
+#index-banner {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, height 0.5s;
+}
+body.scrolled #index-banner {
+    opacity: 1;
+    height: auto;
+}
+.about-avatar {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.about-avatar.show {
+    opacity: 1;
+}
+.main-content, .container {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+body.scrolled .main-content,
+body.scrolled .container {
+    opacity: 1;
+    transform: translateY(0);
 }

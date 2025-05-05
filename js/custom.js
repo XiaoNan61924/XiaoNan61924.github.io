@@ -17,3 +17,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// 下拉过渡动画
+window.addEventListener('scroll', function() {
+    if(window.scrollY > 10) {
+        document.body.classList.add('scrolled');
+    } else {
+        document.body.classList.remove('scrolled');
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var aboutAvatar = document.querySelector('.about-avatar');
+    if (aboutAvatar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 10) {
+                aboutAvatar.classList.add('show');
+            } else {
+                aboutAvatar.classList.remove('show');
+            }
+        });
+    }
+});
